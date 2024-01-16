@@ -83,6 +83,16 @@ android_app_import {
 }
 
 android_app_import {
+    name: "DevicePersonalizationPrebuiltPixel2021",
+    owner: "google_devices",
+    apk: "product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk",
+    presigned: true,
+    dex_preopt: { enabled: false },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
     name: "DiagMon",
     owner: "google_devices",
     apk: "product/priv-app/DiagMon/DiagMon.apk",
@@ -263,6 +273,13 @@ dex_import {
     owner: "google_devices",
     jars: [ "system_ext/framework/com.google.pixel.camera.connectivity.jar" ],
     system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.android.camera.experimental2021",
+    owner: "google_devices",
+    jars: [ "vendor/framework/com.google.android.camera.experimental2021.jar" ],
+    soc_specific: true,
 }
 
 dex_import {
@@ -1277,13 +1294,6 @@ prebuilt_etc {
     src: "vendor/etc/chre/uv_exposure.so",
     filename_from_src: true,
     sub_dir: "chre",
-    soc_specific: true,
-}
-
-dex_import {
-    name: "com.google.android.camera.experimental2021",
-    owner: "google_devices",
-    jars: [ "vendor/framework/com.google.android.camera.experimental2021.jar" ],
     soc_specific: true,
 }
 

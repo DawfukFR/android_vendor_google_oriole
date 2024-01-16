@@ -2447,6 +2447,7 @@ PRODUCT_PACKAGES += \
     ConnectivityThermalPowerManager \
     ConnMO \
     DCMO \
+    DevicePersonalizationPrebuiltPixel2021 \
     default-permissions_maestro \
     device_symlinks \
     DiagMon \
