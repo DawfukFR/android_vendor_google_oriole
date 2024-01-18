@@ -2,10 +2,10 @@
 # For more info, see https://github.com/kdrag0n/adevtool
 
 # Inherit AOSP product
-$(call inherit-product, device/google/raviole/zephyrus_raven.mk)
+$(call inherit-product, device/google/raviole/aosp_raven.mk)
 
 # Match stock product info
-PRODUCT_NAME := raven
+PRODUCT_NAME := zephyrus_raven
 PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
