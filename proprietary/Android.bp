@@ -166,7 +166,7 @@ android_app_import {
     name: "PixelCameraServicesRaven",
     owner: "google_devices",
     apk: "product/priv-app/PixelCameraServicesRaven/PixelCameraServicesRaven.apk",
-    certificate: "platform",
+    presigned: true,
     privileged: true,
     dex_preopt: { enabled: false },
     product_specific: true,
